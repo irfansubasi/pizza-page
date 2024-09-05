@@ -11,6 +11,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: solid 1px purple;
 }
 
 html {
@@ -29,9 +30,23 @@ a {
 
 .container {
   width: 100%;
-  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
+.btn {
+  font-family: 'Barlow', system-ui;
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/*HEADER*/
 .header-section {
   background: url(./assets/iteration-1/home-banner.png);
   background-size: cover;
@@ -56,11 +71,12 @@ a {
   justify-content: center;
   align-items: center;
   color: #ffffff;
+  max-width: 550px;
+  gap: 3rem;
 }
 
 .header-headings {
   text-align: center;
-  margin-top: 3rem;
 }
 
 .italic-heading {
@@ -75,17 +91,56 @@ a {
   font-size: 5rem;
 }
 
-.btn {
-  font-family: 'Barlow', system-ui;
-  padding: 1rem 3rem;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
 .header-btn {
   background-color: var(--yellow-color);
   color: var(--grey-dark-color);
   font-weight: 600;
-  margin-top: 2rem;
+}
+
+nav {
+  background-color: var(--white-color);
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+}
+
+.menu-items a {
+  font-family: 'Barlow', system-ui;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--grey-dark-color);
+}
+
+.nav-item-icon img {
+  width: 2.5rem;
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
 }
