@@ -252,13 +252,17 @@ nav {
 .menu-card {
   flex: 1;
   background: var(--white-color);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 10px;
 }
 
 .menu-card img {
   width: 100%;
   height: auto;
+}
+
+.menu-card-titles h3 {
+  margin: 1rem 0;
 }
 
 .menu-cards .stats {
