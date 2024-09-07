@@ -113,7 +113,6 @@ nav {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1.2rem 0;
-  gap: 1rem;
 }
 
 .menu-items a {
@@ -125,6 +124,14 @@ nav {
   align-items: center;
   gap: 0.5rem;
   color: var(--grey-dark-color);
+  padding: 0.5rem 1.3rem;
+}
+
+.menu-items a:hover {
+  background: var(--grey-dark-color);
+  color: var(--white-color);
+  padding: 0.5rem 1.3rem;
+  border-radius: 3rem;
 }
 
 .nav-item-icon img {
@@ -376,10 +383,6 @@ footer {
     max-width: 300px;
   }
 
-  .menu-items a {
-    flex: 1 1 calc(50% - 10px);
-  }
-
   .header-headings .italic-heading {
     display: none;
   }
@@ -406,6 +409,16 @@ footer {
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
+  }
+}
+
+@media (max-width: 992px) {
+  .menu-items a {
+    flex: 1 1 calc(50% - 10px);
+  }
+
+  .menu-items {
+    gap: 1rem;
   }
 }
 
