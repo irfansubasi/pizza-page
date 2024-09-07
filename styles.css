@@ -149,6 +149,7 @@ nav {
   flex: 1;
   width: 100%;
   padding: 2.5rem;
+  border-radius: 10px;
   gap: 1rem;
   display: flex;
   flex-direction: column;
